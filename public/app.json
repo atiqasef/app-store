@@ -1,0 +1,235 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://tse4.mm.bing.net/th/id/OIP.STACA07mo-A9VinK7UCSHgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "trending_apps": true,
+    "description": "Programming Hero is a fun and interactive way to learn programming with real-world projects.",
+    "features": [
+      "Interactive coding lessons",
+      "Real-world projects",
+      "Gamified learning experience"
+    ],
+    "reviews": [
+      {
+        "user": "coder_nadia",
+        "rating": 5,
+        "comment": "Best app for beginners! Super engaging."
+      }
+    ]
+  },
+
+  {
+    "id": "app002",
+    "name": "Duolingo",
+    "developer": "Duolingo Inc.",
+    "thumbnail": "https://png.pngtree.com/background/20240423/original/pngtree-teacher-led-online-learning-through-3d-rendered-computer-notebook-picture-image_8618058.jpg",
+    "banner": "https://i.ibb.co/zXGm0ZQ/duolingo-banner.png",
+    "downloads": 500000000,
+    "category": "Education",
+    "rating": 4.7,
+    "trending_apps": true,
+    "description": "Learn languages in a fun, free, and effective way.",
+    "features": [
+      "Multiple languages",
+      "Daily goals",
+      "Gamified lessons"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app003",
+    "name": "Khan Academy",
+    "developer": "Khan Academy",
+    "thumbnail": "https://tse2.mm.bing.net/th/id/OIP.Ad6n2XnrOJSS6IKoSmbT9QHaER?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "banner": "https://i.ibb.co/5j9W4dM/khan-banner.png",
+    "downloads": 100000000,
+    "category": "Education",
+    "rating": 4.6,
+    "trending_apps": false,
+    "description": "Free online courses, lessons, and practice for students.",
+    "features": [
+      "Math & Science courses",
+      "Video tutorials",
+      "Practice exercises"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app004",
+    "name": "Notion",
+    "developer": "Notion Labs",
+    "thumbnail": "https://th.bing.com/th/id/R.0ca1502228dcc12dd7ba3a469d360da3?rik=jsijYnybwCcIzQ&pid=ImgRaw&r=0",
+    "banner": "https://i.ibb.co/7VtZ7Sg/notion-banner.png",
+    "downloads": 30000000,
+    "category": "Productivity",
+    "rating": 4.8,
+    "trending_apps": true,
+    "description": "All-in-one workspace for notes, tasks, and collaboration.",
+    "features": [
+      "Task management",
+      "Team collaboration",
+      "Custom templates"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app005",
+    "name": "Todoist",
+    "developer": "Doist Inc.",
+    "thumbnail": "https://th.bing.com/th/id/R.075a7b27c7eb15e2b2a028ddcbf8993a?rik=oO4jUE46eLcKsA&pid=ImgRaw&r=0",
+    "banner": "https://i.ibb.co/4Yh6V6H/todoist-banner.png",
+    "downloads": 25000000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "trending_apps": false,
+    "description": "Organize tasks and manage projects efficiently.",
+    "features": [
+      "Task scheduling",
+      "Reminders",
+      "Cross-platform sync"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app006",
+    "name": "Google Keep",
+    "developer": "Google LLC",
+    "thumbnail": "https://empmonitor.com/blog/wp-content/uploads/2023/02/Time-Tracking-Software-boost-productivity.jpg",
+    "banner": "https://i.ibb.co/xG9Q1dH/keep-banner.png",
+    "downloads": 100000000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "trending_apps": false,
+    "description": "Quick notes, lists, and reminders by Google.",
+    "features": [
+      "Voice notes",
+      "Color-coded notes",
+      "Cloud sync"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app007",
+    "name": "PUBG Mobile",
+    "developer": "Tencent Games",
+    "thumbnail": "https://th.bing.com/th/id/R.3f5b4504258104d69dfff9c36e57dad2?rik=TwmGLuUVjVHJtw&riu=http%3a%2f%2fandroidpowerhub.com%2fwp-content%2fuploads%2f2017%2f04%2fFree-Racing-Games-Online.jpg&ehk=f6M%2bxXYc07VcUqAFg%2flvAfVi4N4hJhxuxYIB6TSy1EE%3d&risl=&pid=ImgRaw&r=0",
+    "banner": "https://i.ibb.co/Z8M1JQk/pubg-banner.png",
+    "downloads": 1000000000,
+    "category": "Gaming",
+    "rating": 4.4,
+    "trending_apps": true,
+    "description": "Battle royale game with intense multiplayer action.",
+    "features": [
+      "Multiplayer battles",
+      "High-quality graphics",
+      "Team play"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app008",
+    "name": "Free Fire",
+    "developer": "Garena",
+    "thumbnail": "https://i.ytimg.com/vi/X1tBEKFYKJg/maxresdefault.jpg",
+    "banner": "https://i.ibb.co/Q9Z7mSc/freefire-banner.png",
+    "downloads": 1000000000,
+    "category": "Gaming",
+    "rating": 4.3,
+    "trending_apps": true,
+    "description": "Fast-paced survival shooter game.",
+    "features": [
+      "Short matches",
+      "Character skills",
+      "Squad gameplay"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app009",
+    "name": "Clash of Clans",
+    "developer": "Supercell",
+    "thumbnail": "https://static1.makeuseofimages.com/wp-content/uploads/2016/08/classic-games-android.jpg",
+    "banner": "https://i.ibb.co/Y7pLJ5T/coc-banner.png",
+    "downloads": 500000000,
+    "category": "Gaming",
+    "rating": 4.6,
+    "trending_apps": false,
+    "description": "Build villages and battle with players worldwide.",
+    "features": [
+      "Strategy gameplay",
+      "Clan wars",
+      "Base building"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app010",
+    "name": "Coursera",
+    "developer": "Coursera Inc.",
+    "thumbnail": "https://tse4.mm.bing.net/th/id/OIP.h6_x3yU3sErfHR51lRI-6AHaDt?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "banner": "https://i.ibb.co/Wy3gYzZ/coursera-banner.png",
+    "downloads": 70000000,
+    "category": "Education",
+    "rating": 4.7,
+    "trending_apps": false,
+    "description": "Online courses from top universities and companies.",
+    "features": [
+      "Professional certificates",
+      "University courses",
+      "Flexible learning"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app011",
+    "name": "Microsoft To Do",
+    "developer": "Microsoft",
+    "thumbnail": "https://tse1.mm.bing.net/th/id/OIP.xnVfu9kdmPf8xMwk1JL5XwHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "banner": "https://i.ibb.co/3B6Z9cX/ms-todo-banner.png",
+    "downloads": 50000000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "trending_apps": false,
+    "description": "Daily task manager to organize your work and life.",
+    "features": [
+      "Daily planner",
+      "Cloud sync",
+      "Simple UI"
+    ],
+    "reviews": []
+  },
+
+  {
+    "id": "app012",
+    "name": "Asphalt 9",
+    "developer": "Gameloft",
+    "thumbnail": "https://tse4.mm.bing.net/th/id/OIP.2WIS2KQAUw4vkVN1QLaQhQHaD4?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "banner": "https://i.ibb.co/vd8XKJp/asphalt-banner.png",
+    "downloads": 300000000,
+    "category": "Gaming",
+    "rating": 4.5,
+    "trending_apps": true,
+    "description": "High-speed racing game with stunning graphics.",
+    "features": [
+      "Luxury cars",
+      "Online multiplayer",
+      "Career mode"
+    ],
+    "reviews": []
+  }
+]
