@@ -9,6 +9,7 @@ import MyProfile from "../Pages/MyProfile/MyProfile";
 import Login from "../Authentication/Login";
 import Register from "../Authentication/Register";
 import TrendingAppsDetails from "../Components/TrendingAppsDetails/TrendingAppsDetails";
+import PrivateRoute from "../AuthProvider/PrivateRoute";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
         {path: '/blog', Component: Blog},
         {path: '/aboutus', Component: AboutUs},
         {path: '/support', Component: Support},
-        {path: '/myprofile', Component: MyProfile},
+        {path: '/myprofile', element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>},
     ]
   },
   {
@@ -29,6 +30,8 @@ export const router = createBrowserRouter([
     path: '/register', Component: Register
   },
   {
-    path:'/app/:id', Component: TrendingAppsDetails
+    path:'/app/:id', element: <PrivateRoute>
+      <TrendingAppsDetails></TrendingAppsDetails>
+    </PrivateRoute>
   }
 ]);
