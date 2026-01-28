@@ -1,10 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaBriefcaseMedical, FaMapPin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Support() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
+      <Helmet>
+        <title>AppStore | Support</title>
+      </Helmet>
       {/* Header */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-3">Support Center</h1>

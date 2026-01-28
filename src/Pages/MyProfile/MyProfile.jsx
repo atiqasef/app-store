@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import Navbar from '../../Components/Header/Navbar';
+import { Helmet } from 'react-helmet';
 
 export default function MyProfile() {
   const { user } = useContext(AuthContext);
@@ -40,7 +41,9 @@ export default function MyProfile() {
 
   return (
     <div className="w-11/12 mx-auto mt-10">
-
+      <Helmet>
+        <title>AppStore | My-Profile</title>
+      </Helmet>
       <div className="card bg-base-100 shadow-xl max-w-md mx-auto p-6">
         <h1 className="text-3xl font-bold mb-5 text-center">My Profile</h1>
 
@@ -51,7 +54,7 @@ export default function MyProfile() {
             className="w-24 h-24 rounded-full mb-3"
           />
           <p className="font-semibold">{user.email}</p>
-           <p className="font-semibold">{user.displayName}</p>
+          <p className="font-semibold">{user.displayName}</p>
         </div>
 
         <form onSubmit={handleUpdate} className="flex flex-col gap-4">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaRegLightbulb, FaRocket } from "react-icons/fa";
 
@@ -6,6 +7,9 @@ export default function AboutUs() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Header */}
+      <Helmet>
+        <title>AppStore | About Us</title>
+      </Helmet>
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">About AppStore</h1>
         <p className="text-gray-500 max-w-2xl mx-auto">
