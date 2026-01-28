@@ -50,7 +50,7 @@ export default function Register() {
         .then(result=>{
             const user = result.user;
            
-            console.log(user)
+           
         })
         .catch(error=>{
 

@@ -20,7 +20,7 @@ export default function Navbar() {
         alert('LogOut Successful')
       })
       .catch(error => {
-        console.log(error);
+        
       })
   }
   const links = <>

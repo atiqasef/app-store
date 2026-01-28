@@ -12,13 +12,11 @@ export default function Login() {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        // Debug: Check if values are being captured
-    console.log('Email:', email);
-    console.log('Password:', password);
+        
     
-    // Validate before sending
+   
     if (!email || !password) {
-        console.error('Email or password is empty');
+       
         return;
     }
 
@@ -27,10 +25,6 @@ export default function Login() {
             navigate('/')
         })
         .catch(error => {
-            // Log the complete error object
-            console.log('Full Error Object:', error);
-            console.log('Error Code:', error.code);
-            console.log('Error Message:', error.message);
             alert('credential wrong');
         });
     }

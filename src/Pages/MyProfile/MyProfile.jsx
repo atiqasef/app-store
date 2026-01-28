@@ -25,7 +25,7 @@ export default function MyProfile() {
         setLoading(false);
       })
       .catch((error) => {
-        console.error(error);
+        
         alert('Error updating profile.');
         setLoading(false);
       });
