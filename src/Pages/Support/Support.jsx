@@ -1,4 +1,6 @@
 import React from "react";
+import { FaMapPin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Support() {
   return (
@@ -16,7 +18,7 @@ export default function Support() {
         {/* FAQ */}
         <div className="card bg-base-100 shadow-md">
           <div className="card-body">
-            <h2 className="card-title">📌 Frequently Asked Questions</h2>
+            <h2 className="card-title flex items-center gap-3"><FaMapPin /> Frequently Asked Questions</h2>
             <p className="text-gray-600">
               Find quick answers about app downloads, categories, reviews, and
               trending apps.
@@ -30,7 +32,7 @@ export default function Support() {
         {/* Contact */}
         <div className="card bg-base-100 shadow-md">
           <div className="card-body">
-            <h2 className="card-title">📧 Contact Support</h2>
+            <h2 className="card-title flex items-center gap-3"><MdEmail /> Contact Support</h2>
             <p className="text-gray-600">
               Still need help? Reach out to our support team anytime.
             </p>
