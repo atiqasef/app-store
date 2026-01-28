@@ -6,11 +6,13 @@ export default function Apps() {
   return (
     <div>
       <Helmet>
+
         <title>Apps | App Store</title>
+        
       </Helmet>
     
       <CategorySection></CategorySection>
-      
+
     </div>
   )
 }
