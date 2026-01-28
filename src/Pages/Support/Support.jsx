@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMapPin } from "react-icons/fa";
+import { FaBriefcaseMedical, FaMapPin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Support() {
@@ -46,7 +46,7 @@ export default function Support() {
       {/* Support Form */}
       <div className="card bg-base-100 shadow-lg">
         <div className="card-body">
-          <h2 className="card-title mb-4">📝 Send Us a Message</h2>
+          <h2 className="card-title mb-4 flex gap-3 items-center"><FaBriefcaseMedical /> Send Us a Message</h2>
 
           <div className="grid md:grid-cols-2 gap-4">
             <input
