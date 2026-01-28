@@ -3,6 +3,7 @@ import HeroSection from '../../Components/HeroSection/HeroSection'
 import TrendingApps from '../../Components/TrendingApps/TrendingApps'
 import CategorySection from '../../Components/CategorySection/CategorySection'
 import { AuthContext } from '../../AuthProvider/AuthProvider'
+import { Helmet } from 'react-helmet'
 
 export default function Home() {
   const {user, loading} = useContext(AuthContext);
@@ -15,6 +16,9 @@ export default function Home() {
   }
   return (
     <div className='mt-10'>
+      <Helmet>
+        <title>Home | App Store</title>
+      </Helmet>
       <HeroSection></HeroSection>
       <TrendingApps></TrendingApps>
       <CategorySection></CategorySection>
