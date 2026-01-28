@@ -1,10 +1,19 @@
 import React, { useContext } from 'react'
 import Navbar from '../Components/Header/Navbar'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { AuthContext, provider } from '../AuthProvider/AuthProvider'
 
+ const validatePassword = (password) => {
+  const hasUppercase = /[A-Z]/.test(password); // বড় অক্ষর আছে কি না
+  const hasLowercase = /[a-z]/.test(password); // ছোট অক্ষর আছে কি না
+  const isValidLength = password.length >= 6; // length >= 6
+
+  return hasUppercase && hasLowercase && isValidLength;
+}
+
 export default function Register() {
-    const {googleSignIn, setUser,  createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const {googleSignIn, setUser,  createUser, updateUser} = useContext(AuthContext);
     const handleRegistration = (e) =>{
             e.preventDefault();
                const form = e.target;
@@ -12,12 +21,26 @@ export default function Register() {
         const email = form.email.value;
         const photo = form.photo.value;
         const password = form.password.value;
-         createUser(email,password)
-         .then(result=>{
 
+            if (!validatePassword(password)) {
+    alert("Password must have at least 6 characters, 1 uppercase and 1 lowercase letter.");
+    return; // stop registration
+  }
+
+         createUser(email,password, name, photo)
+         .then(result=>{
+                navigate('/');
+                const user = result.user;
+                updateUser({displayName: name, photoUrl: photo})
+                .then(()=>{
+                    setUser({...user, displayName: name, photoURL: photo});
+                })
+                .catch(error=>{
+                    alert(error);
+                })
          })
          .catch(error=>{
-            
+
          })
     }
     const handleRegister = () => {

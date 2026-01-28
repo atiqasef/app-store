@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import Navbar from '../Components/Header/Navbar'
-import { Link } from 'react-router'
+import { Link, Navigate, useNavigate } from 'react-router'
 import { AuthContext } from '../AuthProvider/AuthProvider'
 import { auth } from '../firebase.init';
 
 export default function Login() {
+    const navigate = useNavigate();
     const {signIn} = useContext(AuthContext);
     const handleLogin=(e)=>{
         e.preventDefault();
@@ -23,13 +24,14 @@ export default function Login() {
 
         signIn(email, password)
         .then(result => {
-            console.log('Login successful:', result.user);
+            navigate('/')
         })
         .catch(error => {
             // Log the complete error object
             console.log('Full Error Object:', error);
             console.log('Error Code:', error.code);
             console.log('Error Message:', error.message);
+            alert('credential wrong');
         });
     }
     return (

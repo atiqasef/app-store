@@ -21,7 +21,11 @@ export default function Navbar() {
   <li><NavLink to='/blog'>Blog</NavLink></li>
   <li><NavLink to='/aboutus'>About Us</NavLink></li>
   <li><NavLink to='/support'>Support</NavLink></li>
-  <li><NavLink to='/myprofile'>My Profile</NavLink></li>
+  <li>{
+  user && (
+    <NavLink to="/my-profile">My Profile</NavLink>
+  )
+}</li>
   </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
