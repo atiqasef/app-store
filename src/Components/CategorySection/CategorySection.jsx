@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { BiCategory } from "react-icons/bi";
+import { FaStarHalfAlt } from "react-icons/fa";
+import { IoMdDownload } from "react-icons/io";
 
 export default function CategorySection() {
   const [apps, setApps] = useState([]);
@@ -20,7 +23,7 @@ export default function CategorySection() {
   return (
     <section className="mb-12">
       <h2 className="text-2xl font-bold mb-6">
-        📂 Browse by Category
+        <p className="flex items-center gap-3"><BiCategory /> Browse by Category</p>
       </h2>
 
       {/* Category Buttons */}
@@ -54,8 +57,9 @@ export default function CategorySection() {
 
             <div className="card-body">
               <h3 className="font-semibold">{app.name}</h3>
-              <p>⭐ {app.rating}</p>
-              <p>⬇ {app.downloads.toLocaleString()}</p>
+             <p className="flex gap-3 items-center"> <FaStarHalfAlt /> {app.rating}</p>
+             <p className="flex gap-3 items-center"><IoMdDownload /> {app.downloads.toLocaleString()}</p>
+             
 
               <button className="btn btn-primary btn-sm">
                 View Details

@@ -5,15 +5,17 @@ import CategorySection from '../../Components/CategorySection/CategorySection'
 import { AuthContext } from '../../AuthProvider/AuthProvider'
 
 export default function Home() {
-  const {user} = useContext(AuthContext);
+  const {user, loading} = useContext(AuthContext);
+  if (loading) {
+    return (
+      <div className="w-full flex justify-center py-2">
+        <span className="loading loading-spinner text-blue-500"></span>
+      </div>
+    );
+  }
   return (
     <div className='mt-10'>
       <HeroSection></HeroSection>
-      <div className='h-20'>
-        {
-          user && user.email
-        }
-      </div>
       <TrendingApps></TrendingApps>
       <CategorySection></CategorySection>
     </div>

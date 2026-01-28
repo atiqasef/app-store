@@ -1,4 +1,6 @@
 import React from "react";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FaRegLightbulb, FaRocket } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
@@ -16,7 +18,7 @@ export default function AboutUs() {
         {/* Card 1 */}
         <div className="card bg-base-100 shadow-md">
           <div className="card-body">
-            <h2 className="card-title">🚀 Our Mission</h2>
+            <h2 className="card-title flex items-center gap-3"><FaRocket /> Our Mission</h2>
             <p className="text-gray-600">
               Our mission is to help users easily discover high-quality apps
               across different categories like productivity, education, gaming,
@@ -28,7 +30,7 @@ export default function AboutUs() {
         {/* Card 2 */}
         <div className="card bg-base-100 shadow-md">
           <div className="card-body">
-            <h2 className="card-title">🌍 Our Vision</h2>
+            <h2 className="card-title flex items-center gap-3"><AiOutlineGlobal /> Our Vision</h2>
             <p className="text-gray-600">
               We envision a platform where developers can showcase their apps
               and users can find trusted applications without confusion.
@@ -39,7 +41,7 @@ export default function AboutUs() {
         {/* Card 3 */}
         <div className="card bg-base-100 shadow-md">
           <div className="card-body">
-            <h2 className="card-title">💡 Why Choose Us?</h2>
+            <h2 className="card-title flex items-center gap-3"><FaRegLightbulb /> Why Choose Us?</h2>
             <p className="text-gray-600">
               Curated apps, honest reviews, trending lists, and a clean user
               experience — built for simplicity and speed.

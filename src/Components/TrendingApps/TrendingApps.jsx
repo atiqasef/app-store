@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { FaFire, FaStarHalfAlt } from "react-icons/fa";
+import { IoMdDownload } from "react-icons/io";
 import { Link } from "react-router";
 
 export default function TrendingApps() {
@@ -14,13 +16,13 @@ export default function TrendingApps() {
       });
   }, []);
 
-  // 🔥 Show only 4 or all
+ 
   const visibleApps = showAll ? trending : trending.slice(0, 4);
 
   return (
     <section className="mb-12">
       <h2 className="text-2xl font-bold mb-6">
-        🔥 Trending Apps
+        <p className="flex gap-3 items-center"><FaFire /> Trending Apps</p>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -43,8 +45,8 @@ export default function TrendingApps() {
 
             <div className="card-body">
               <h3 className="font-semibold">{app.name}</h3>
-              <p>⭐ {app.rating}</p>
-              <p>⬇ {app.downloads.toLocaleString()}</p>
+              <p className="flex gap-3 items-center"> <FaStarHalfAlt /> {app.rating}</p>
+              <p className="flex gap-3 items-center"><IoMdDownload /> {app.downloads.toLocaleString()}</p>
 
              <Link to={`/app/${app.id}`}>
               <button className="btn btn-primary btn-sm">

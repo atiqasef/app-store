@@ -10,6 +10,7 @@ import Login from "../Authentication/Login";
 import Register from "../Authentication/Register";
 import TrendingAppsDetails from "../Components/TrendingAppsDetails/TrendingAppsDetails";
 import PrivateRoute from "../AuthProvider/PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
         {path: '/aboutus', Component: AboutUs},
         {path: '/support', Component: Support},
         {path: '/myprofile', element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>},
+        {path: '*', Component: ErrorPage},
     ]
   },
   {

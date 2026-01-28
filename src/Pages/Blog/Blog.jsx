@@ -1,5 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { CiCalendarDate } from "react-icons/ci";
+import { IoBookSharp } from "react-icons/io5";
+import { TbWriting } from "react-icons/tb";
 
 export default function Blog() {
   const blogs = [
@@ -64,8 +67,8 @@ export default function Blog() {
 
       {/* Blog Cards */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold mb-8">
-          📚 Latest Articles
+        <h2 className="text-2xl font-bold mb-8 flex items-center gap-3">
+          <IoBookSharp /> Latest Articles
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -84,8 +87,8 @@ export default function Blog() {
                 </p>
 
                 <div className="text-sm text-gray-500 mt-3">
-                  <p>✍ {blog.author}</p>
-                  <p>📅 {blog.date}</p>
+                  <p className="flex items-center gap-3"><TbWriting /> {blog.author}</p>
+                  <p className="flex items-center gap-3"><CiCalendarDate /> {blog.date}</p>
                 </div>
 
                 <div className="card-actions justify-end mt-4">
