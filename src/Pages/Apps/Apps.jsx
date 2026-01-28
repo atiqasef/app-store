@@ -10,6 +10,7 @@ export default function Apps() {
       </Helmet>
     
       <CategorySection></CategorySection>
+      
     </div>
   )
 }
